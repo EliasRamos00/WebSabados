@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,900&display=swap');
+
+* {
+  margin: 0;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+header {
+  width: 100%;
+  background-image: url('images/restaurante.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  height: 800px;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu-link {
+  font-size: 35px;
+  font-weight: 500;
+  text-decoration: none;
+  color: white;
+  padding: 14px 20px;
+  border-bottom: 2px solid transparent;
+  transition-duration: 0.6s;
+}
+
+.menu-link:hover {
+  border-bottom: 2px solid #ff5805;
+}
+
+h1 {
+  margin: 100px 0px;
+  font-size: 35px;
+  text-align: center;
+  width: 100%;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.info {
+  margin: 30px;
+  width: 200px;
+  height: 200px;
+  border-radius: 150px;
+  object-fit: cover;
+}
+
+.dish {
+  flex: 1;
+}
+
+p {
+  padding: 0px 20px 0px 20px;
+}
+
+/*Display menu vertically for smaller screens*/
+@media screen and (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}
